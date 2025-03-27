@@ -1,56 +1,238 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
+    <title>Diego Sánchez-Escribano Pérez | Desarrollador</title>
+    <meta name="description" content="Portafolio personal de Diego Sánchez-Escribano Pérez, Ingeniero Informático especializado en desarrollo Back-End">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <header>
-        <h1>Diego Sanchez-Escribano Perez</h1>
-        <p>Bienvenido a mi espacio personal</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <div class="perfil">
-            <img src="MiFoto.jpg" alt="Mi Foto">
-            <p> Soy un estudiante de 22 años en el último año de Ingeniería Informática, con un historial académico limpio.
-                Tengo dominio de varios lenguajes de programación, incluyendo Java, C#, C, SQL, MySQL y PostgreSQL, así como conocimientos en JavaScript, HTML y CSS.
-                Me caracterizo por ser una persona competitiva, sociable y con facilidad para el trabajo en equipo.
-                Poseo experiencia en metodologías ágiles como Scrum y XP.
-                Aunque me considero un desarrollador Full Stack, mi especialidad es el desarrollo Back-End con Java y Spring Boot.
-            <br>
-                En cuanto a los idiomas hablo castellano y gallego a nivel nativo y cuento con el B2 de Cambridge en Ingles
-            </p>
-
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">Diego Sánchez-Escribano</div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <i data-feather="sun" class="icon light-icon"></i>
+                    <i data-feather="moon" class="icon dark-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary contact-btn">Contáctame</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menú">
+                <i data-feather="menu"></i>
+            </button>
         </div>
-    </section>
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <p>Consulta mis proyectos en <a href="https://github.com/dsanchez-escribano" target="_blank">mi GitHub</a>. </p>
-        <p>Además, he realizado ChatBots con IA para resolver cuestiones a restaurantes como problemas con los alergenos. También tengo experiencia en Asesoría de Empresas</p>
-    </section>
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes encontrarme en mis redes sociales.</p>
+    </header>
 
-            <a href="https://www.instagram.com/diegostuss__/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/diegostuss" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/diego-sanchez-escribano-perez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            
-        
-    </section>
-    <footer>
-        <p>&copy; 2025 Diego Sanchez-Escribano Perez. Todos los derechos reservados.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Diego Sánchez-Escribano Pérez</h1>
+                    <p class="hero-subtitle">Ingeniero Informático especializado en desarrollo Back-End</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Contáctame</a>
+                        <a href="#projects" class="btn btn-outline">Ver proyectos</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="profile-image-wrapper">
+                        <img src="MiFoto.jpg" alt="Diego Sánchez-Escribano" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="about-container">
+                    <div class="about-content">
+                        <p>
+                            Soy un estudiante de 22 años en el último año de Ingeniería Informática, con un historial académico
+                            limpio. Me caracterizo por ser una persona competitiva, sociable y con facilidad para el trabajo en
+                            equipo.
+                        </p>
+                        <p>
+                            Aunque me considero un desarrollador Full Stack, mi especialidad es el desarrollo Back-End con Java y
+                            Spring Boot. Tengo experiencia en metodologías ágiles como Scrum y XP.
+                        </p>
+                        <p>
+                            En cuanto a los idiomas, hablo castellano y gallego a nivel nativo y cuento con el B2 de Cambridge en
+                            inglés.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <h3 class="card-title">Información Personal</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Edad:</span> 22 años
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Educación:</span> Ingeniería Informática
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Idiomas:</span> Castellano, Gallego (Nativo), Inglés (B2)
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Ubicación:</span> España
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Intereses:</span> Desarrollo Back-End, IA, Asesoría de Empresas
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 class="card-title">Desarrollo Back-End</h3>
+                        <p class="card-description">Especializado en Java y Spring Boot. Experiencia en desarrollo de APIs y servicios.</p>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">C</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="card-title">Desarrollo Front-End</h3>
+                        <p class="card-description">Conocimientos en tecnologías web modernas para crear interfaces de usuario.</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="card-title">Bases de Datos</h3>
+                        <p class="card-description">Experiencia en diseño y gestión de bases de datos relacionales.</p>
+                        <div class="tags">
+                            <span class="tag">MySQL</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="methodologies">
+                    <h3 class="subtitle">Metodologías</h3>
+                    <div class="method-tags">
+                        <span class="method-tag">Scrum</span>
+                        <span class="method-tag">XP</span>
+                        <span class="method-tag">Desarrollo Ágil</span>
+                        <span class="method-tag">Trabajo en Equipo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Proyectos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="card-title">ChatBots con IA</h3>
+                        <p class="card-description">Desarrollo de chatbots inteligentes para restaurantes, enfocados en resolver consultas sobre alérgenos y otros servicios.</p>
+                        <div class="tags">
+                            <span class="tag">IA</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Chatbot</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="card-title">Asesoría de Empresas</h3>
+                        <p class="card-description">Servicios de consultoría y asesoramiento para empresas en el ámbito tecnológico.</p>
+                        <div class="tags">
+                            <span class="tag">Consultoría</span>
+                            <span class="tag">Negocios</span>
+                            <span class="tag">Tecnología</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="card-title">Proyectos en GitHub</h3>
+                        <p class="card-description">Consulta mis repositorios en GitHub para ver más proyectos de desarrollo.</p>
+                        <div class="tags">
+                            <span class="tag">Open Source</span>
+                            <span class="tag">Desarrollo</span>
+                            <span class="tag">Colaboración</span>
+                        </div>
+                        <a href="https://github.com/dsanchez-escribano" class="btn btn-outline project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-container">
+                    <p class="contact-text">
+                        ¿Interesado en trabajar juntos o tienes alguna pregunta? ¡Contáctame a través de mis redes sociales!
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/diego-sanchez-escribano-perez/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="https://github.com/dsanchez-escribano" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/diegostuss__/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="https://x.com/diegostuss" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <i data-feather="twitter"></i>
+                        </a>
+                    </div>
+                    <a href="mailto:contacto@diegosanchez.com" class="btn btn-primary email-btn">Enviar Email</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="copyright">
+                <p>&copy; <span id="current-year"></span> Diego Sánchez-Escribano Pérez. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-nav">
+                <a href="#about" class="footer-link">Sobre mí</a>
+                <a href="#skills" class="footer-link">Habilidades</a>
+                <a href="#projects" class="footer-link">Proyectos</a>
+                <a href="#contact" class="footer-link">Contacto</a>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
